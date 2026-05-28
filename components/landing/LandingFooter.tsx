@@ -2,8 +2,6 @@
 // ── LandingFooter.tsx ────────────────────────────────────────────────────────
 // Luxury footer with RUO disclaimer
 
-import Image from 'next/image'
-
 export default function LandingFooter() {
   return (
     <footer style={{
@@ -13,17 +11,6 @@ export default function LandingFooter() {
       textAlign: 'center',
       borderTop: '1px solid rgba(212,175,55,0.12)',
     }}>
-      {/* Logo */}
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
-        <Image
-          src="/images/logo.png"
-          alt="Pepscore Labs"
-          width={180}
-          height={72}
-          style={{ objectFit: 'contain', filter: 'drop-shadow(0 4px 16px rgba(212,175,55,0.3)) brightness(1.05)' }}
-        />
-      </div>
-
       {/* Tagline */}
       <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.28em', color: 'rgba(212,175,55,0.6)', textTransform: 'uppercase', marginBottom: '10px' }}>
         Science &nbsp;·&nbsp; Precision &nbsp;·&nbsp; Performance

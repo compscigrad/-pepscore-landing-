@@ -1,8 +1,6 @@
 'use client'
 // ── LandingContact.tsx ────────────────────────────────────────────────────────
-// Contact card + QR code section
-
-import Image from 'next/image'
+// Contact card section
 
 export default function LandingContact() {
   return (
@@ -35,7 +33,7 @@ export default function LandingContact() {
           </h2>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '48px', alignItems: 'center' }}>
+        <div style={{ display: 'flex', justifyContent: 'center' }}>
 
           {/* Contact Card */}
           <div style={{
@@ -45,17 +43,9 @@ export default function LandingContact() {
             border: '1px solid rgba(212,175,55,0.25)',
             boxShadow: '0 24px 72px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,255,255,0.05)',
             backdropFilter: 'blur(12px)',
+            maxWidth: '420px',
+            width: '100%',
           }}>
-            <div style={{ marginBottom: '28px' }}>
-              <Image
-                src="/images/logo.png"
-                alt="Pepscore Lab"
-                width={160}
-                height={64}
-                style={{ objectFit: 'contain', filter: 'drop-shadow(0 4px 16px rgba(212,175,55,0.3)) brightness(1.05)' }}
-              />
-            </div>
-
             <p style={{ fontSize: '11px', color: 'rgba(255,255,255,0.3)', marginBottom: '24px', letterSpacing: '0.1em', textTransform: 'uppercase', fontWeight: 600 }}>
               Pepscore Lab &nbsp;|&nbsp; DC Metro Area
             </p>
@@ -107,49 +97,6 @@ export default function LandingContact() {
             >
               Submit Inquiry →
             </a>
-          </div>
-
-          {/* QR Code — points to pepscorelab.com inquiry */}
-          <div style={{ textAlign: 'center' }}>
-            <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.24em', color: 'rgba(212,175,55,0.7)', textTransform: 'uppercase', marginBottom: '22px' }}>
-              📱 Scan to Connect
-            </p>
-            <div style={{
-              display: 'inline-block',
-              background: '#fff',
-              borderRadius: '24px',
-              padding: '22px',
-              boxShadow: '0 24px 72px rgba(0,0,0,0.5), 0 0 0 2px rgba(212,175,55,0.3)',
-            }}>
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img
-                src="https://api.qrserver.com/v1/create-qr-code/?data=https%3A%2F%2Fpepscorelab.com%23inquiry&size=240x240&format=png&margin=8&qzone=1&color=000000&bgcolor=FFFFFF"
-                alt="Pepscore Lab QR Code — Scan to inquire"
-                width={240}
-                height={240}
-                style={{ display: 'block', borderRadius: '10px' }}
-                loading="eager"
-              />
-            </div>
-            <p style={{ fontSize: '13px', color: 'rgba(255,255,255,0.45)', marginTop: '18px', fontWeight: 300, lineHeight: 1.65 }}>
-              Scan to submit an inquiry,<br />view capabilities, or contact us directly
-            </p>
-            <div style={{ display: 'flex', gap: '12px', justifyContent: 'center', marginTop: '22px', flexWrap: 'wrap' }}>
-              <a href="tel:2024253161" style={{
-                background: 'rgba(212,175,55,0.1)',
-                border: '1px solid rgba(212,175,55,0.35)',
-                borderRadius: '50px', padding: '9px 20px',
-                fontSize: '13px', fontWeight: 600, color: '#D4AF37',
-                textDecoration: 'none', letterSpacing: '0.04em',
-              }}>📞 Call Now</a>
-              <a href="#inquiry" style={{
-                background: 'rgba(212,175,55,0.1)',
-                border: '1px solid rgba(212,175,55,0.35)',
-                borderRadius: '50px', padding: '9px 20px',
-                fontSize: '13px', fontWeight: 600, color: '#D4AF37',
-                textDecoration: 'none', letterSpacing: '0.04em',
-              }}>📋 Inquire</a>
-            </div>
           </div>
 
         </div>
