@@ -11,6 +11,16 @@ export default function LandingFooter() {
       textAlign: 'center',
       borderTop: '1px solid rgba(212,175,55,0.12)',
     }}>
+      {/* Banner */}
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '28px' }}>
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/images/banner.png"
+          alt="Pepscore Labs"
+          style={{ width: '100%', maxWidth: '520px', height: 'auto', display: 'block', borderRadius: '10px', opacity: 0.9 }}
+        />
+      </div>
+
       {/* Tagline */}
       <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.28em', color: 'rgba(212,175,55,0.6)', textTransform: 'uppercase', marginBottom: '10px' }}>
         Science &nbsp;·&nbsp; Precision &nbsp;·&nbsp; Performance

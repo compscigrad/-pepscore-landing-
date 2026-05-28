@@ -46,6 +46,15 @@ export default function LandingContact() {
             maxWidth: '420px',
             width: '100%',
           }}>
+            <div style={{ marginBottom: '28px' }}>
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/banner.png"
+                alt="Pepscore Labs"
+                style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '10px' }}
+              />
+            </div>
+
             <p style={{ fontSize: '11px', color: 'rgba(255,255,255,0.3)', marginBottom: '24px', letterSpacing: '0.1em', textTransform: 'uppercase', fontWeight: 600 }}>
               Pepscore Lab &nbsp;|&nbsp; DC Metro Area
             </p>
