@@ -2,8 +2,6 @@
 // ── LandingHero.tsx ─────────────────────────────────────────────────────────
 // Hero section — full-bleed launch image + luxury dark overlay + gold accents
 
-import Image from 'next/image'
-
 // ─── Responsive styles ────────────────────────────────────────────────────────
 const HERO_STYLES = `
   .ps-hero-section {
@@ -146,21 +144,6 @@ export default function LandingHero() {
         {/* ── Content ───────────────────────────────────────────────────────── */}
         <div className="ps-hero-content">
           <div className="ps-hero-inner">
-
-            {/* Logo */}
-            <div style={{ marginBottom: '28px' }}>
-              <Image
-                src="/images/logo.png"
-                alt="Pepscore Labs"
-                width={200}
-                height={80}
-                style={{
-                  objectFit: 'contain',
-                  filter: 'drop-shadow(0 6px 24px rgba(212,175,55,0.45)) brightness(1.1)',
-                }}
-                priority
-              />
-            </div>
 
             {/* Feature badges */}
             <div className="ps-badge-row">
