@@ -41,7 +41,7 @@ export default function LandingFooter() {
           { label: 'Join Waitlist', href: '#inquiry' },
           { label: 'Capabilities', href: '#capabilities' },
           { label: '202.425.3161', href: 'tel:2024253161' },
-          { label: 'pepscorelabs.com', href: 'https://pepscorelabs.com' },
+          { label: 'pepscorelab.com', href: 'https://pepscorelab.com' },
         ].map(l => (
           <a
             key={l.label}
@@ -58,7 +58,7 @@ export default function LandingFooter() {
       {/* Copyright */}
       <div style={{ borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: '24px' }}>
         <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.2)', marginBottom: '10px' }}>
-          © 2025 Pepscore Labs. All rights reserved.
+          © 2026 Pepscore Labs. All rights reserved.
         </p>
         {/* ── IMPORTANT: RUO Disclaimer ────────────────────────────────────── */}
         <p style={{
