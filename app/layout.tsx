@@ -14,13 +14,16 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Pepscore Lab — Precision Peptide Solutions',
     description: 'Science. Precision. Performance. COA-certified, sterility-verified peptide packaging. Launching Fall 2026.',
-    images: [{ url: '/images/logo.png' }],
+    url: 'https://pepscorelab.com',
     siteName: 'Pepscore Lab',
+    images: [{ url: '/images/hero-launch.png', width: 1200, height: 630, alt: 'Pepscore Lab — Peptide Solutions. Elevated.' }],
+    type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Pepscore Lab — Precision Peptide Solutions',
     description: 'COA-certified, sterility-verified peptide packaging. Launching Fall 2026.',
+    images: ['/images/hero-launch.png'],
   },
 }
 
