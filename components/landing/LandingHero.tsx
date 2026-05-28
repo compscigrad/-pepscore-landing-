@@ -103,7 +103,7 @@ export default function LandingHero() {
         {/* ── Hero photograph — fills the entire section ────────────────────── */}
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/images/hero-launch.jpg"
+          src="/images/hero-launch.png"
           alt=""
           className="ps-hero-img"
           aria-hidden="true"
