@@ -10,7 +10,6 @@ const CAPABILITIES = [
   { icon: '🧬', title: 'Vials, Kits & Bulk Solutions', desc: 'Comprehensive product formats — individual vials, complete kits, and bulk solution packaging for every scale.' },
   { icon: '🏭', title: 'Advanced Packaging Systems', desc: 'Precision labeling, tamper-evident sealing, and cold-chain optimized packaging for transport integrity.' },
   { icon: '🤝', title: 'Wholesale Partnerships', desc: 'Tiered wholesale pricing, dedicated account management, and priority fulfillment for volume buyers.' },
-  { icon: '📋', title: 'Full Compliance Documentation', desc: 'Complete regulatory documentation, batch records, and chain of custody paperwork with every shipment.' },
 ]
 
 export default function LandingCapabilities() {
@@ -42,7 +41,7 @@ export default function LandingCapabilities() {
           <div style={{ width: '52px', height: '2px', background: 'linear-gradient(90deg, #D4AF37, #E8C84A)', margin: '24px auto 0', borderRadius: '4px' }} />
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))', gap: '20px' }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: '20px' }}>
           {CAPABILITIES.map((c, i) => (
             <div
               key={c.title}
@@ -53,6 +52,12 @@ export default function LandingCapabilities() {
                 padding: '32px 26px',
                 transition: 'all 0.3s ease',
                 cursor: 'default',
+                ...(i === CAPABILITIES.length - 1 && {
+                  gridColumn: '1 / -1',
+                  maxWidth: '340px',
+                  width: '100%',
+                  margin: '0 auto',
+                }),
               }}
               onMouseEnter={e => {
                 (e.currentTarget as HTMLDivElement).style.borderColor = 'rgba(212,175,55,0.45)'
