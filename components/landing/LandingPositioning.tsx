@@ -22,7 +22,7 @@ export default function LandingPositioning() {
         </h2>
         <div style={{ width: '52px', height: '2px', background: 'linear-gradient(90deg, #D4AF37, #E8C84A)', margin: '0 auto 36px', borderRadius: '4px' }} />
         <p style={{ fontSize: '17px', color: 'rgba(255,255,255,0.6)', lineHeight: 1.85, fontWeight: 300, marginBottom: '20px', maxWidth: '680px', margin: '0 auto 20px' }}>
-          Pepscore Labs is building the next generation of precision peptide packaging and distribution. We deliver pharmaceutical-grade peptide solutions with independently verified purity, sterile manufacturing, and advanced packaging systems for serious research operations.
+          Pepscore Lab is building the next generation of precision peptide packaging and distribution. We deliver pharmaceutical-grade peptide solutions with independently verified purity, sterile manufacturing, and advanced packaging systems for serious research operations.
         </p>
         <p style={{ fontSize: '17px', color: 'rgba(255,255,255,0.5)', lineHeight: 1.85, fontWeight: 300, maxWidth: '680px', margin: '0 auto 48px' }}>
           Serving wholesale buyers, research facilities, and retail distribution channels with a commitment to quality, discretion, and operational excellence.

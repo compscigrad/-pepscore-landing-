@@ -30,7 +30,7 @@ export default function LandingForm() {
           phone: form.phone,
           inquiry_type: form.type,
           message: form.message,
-          _subject: `[Pepscore Labs] Inquiry — ${form.name} (${form.type || 'General'})`,
+          _subject: `[Pepscore Lab] Inquiry — ${form.name} (${form.type || 'General'})`,
         }),
       })
       if (res.ok) {
@@ -102,7 +102,7 @@ export default function LandingForm() {
           </h2>
           <div style={{ width: '52px', height: '2px', background: 'linear-gradient(90deg, #D4AF37, #E8C84A)', margin: '0 auto 22px', borderRadius: '4px' }} />
           <p style={{ fontSize: '16px', color: 'rgba(255,255,255,0.5)', fontWeight: 300, lineHeight: 1.65, maxWidth: '540px', margin: '0 auto' }}>
-            Be among the first to access Pepscore Labs. Submit your inquiry and we'll contact you with early access details and pricing.
+            Be among the first to access Pepscore Lab. Submit your inquiry and we'll contact you with early access details and pricing.
           </p>
         </div>
 
@@ -117,7 +117,7 @@ export default function LandingForm() {
             <div style={{ fontSize: '54px', marginBottom: '20px' }}>✅</div>
             <h3 style={{ fontSize: '24px', fontWeight: 800, color: '#fff', marginBottom: '10px' }}>Inquiry Received</h3>
             <p style={{ color: 'rgba(255,255,255,0.55)', fontWeight: 300, fontSize: '16px', lineHeight: 1.65 }}>
-              Thank you for your interest in Pepscore Labs.<br />We'll be in touch with early access details within 24–48 hours.
+              Thank you for your interest in Pepscore Lab.<br />We'll be in touch with early access details within 24–48 hours.
             </p>
           </div>
         ) : (

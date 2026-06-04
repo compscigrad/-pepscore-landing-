@@ -50,7 +50,7 @@ export default function LandingContact() {
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src="/images/banner.png"
-                alt="Pepscore Labs"
+                alt="Pepscore Lab"
                 style={{ width: '100%', height: 'auto', display: 'block', borderRadius: '10px' }}
               />
             </div>
@@ -83,6 +83,18 @@ export default function LandingContact() {
                   fontSize: '20px', flexShrink: 0, boxShadow: '0 4px 16px rgba(212,175,55,0.35)',
                 }}>🌐</span>
                 pepscorelab.com
+              </a>
+              <a href="mailto:contact@pepscorelab.com" style={{
+                display: 'flex', alignItems: 'center', gap: '14px',
+                color: '#fff', textDecoration: 'none', fontSize: '16px', fontWeight: 500,
+              }}>
+                <span style={{
+                  background: 'linear-gradient(135deg, #D4AF37, #E8C84A)',
+                  borderRadius: '12px', width: '46px', height: '46px',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  fontSize: '20px', flexShrink: 0, boxShadow: '0 4px 16px rgba(212,175,55,0.35)',
+                }}>✉️</span>
+                contact@pepscorelab.com
               </a>
             </div>
 

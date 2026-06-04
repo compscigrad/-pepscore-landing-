@@ -37,7 +37,7 @@ export default function LandingCapabilities() {
             Capabilities & Standards
           </h2>
           <p style={{ fontSize: '16px', color: 'rgba(255,255,255,0.5)', fontWeight: 300, maxWidth: '520px', margin: '0 auto', lineHeight: 1.7 }}>
-            The infrastructure and quality standards that define Pepscore Labs.
+            The infrastructure and quality standards that define Pepscore Lab.
           </p>
           <div style={{ width: '52px', height: '2px', background: 'linear-gradient(90deg, #D4AF37, #E8C84A)', margin: '24px auto 0', borderRadius: '4px' }} />
         </div>

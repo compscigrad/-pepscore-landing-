@@ -16,7 +16,7 @@ export default function LandingFooter() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
           src="/images/banner.png"
-          alt="Pepscore Labs"
+          alt="Pepscore Lab"
           style={{ width: '100%', maxWidth: '520px', height: 'auto', display: 'block', borderRadius: '10px', opacity: 0.9 }}
         />
       </div>
@@ -55,7 +55,7 @@ export default function LandingFooter() {
       {/* Copyright */}
       <div style={{ borderTop: '1px solid rgba(255,255,255,0.05)', paddingTop: '24px' }}>
         <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.2)', marginBottom: '10px' }}>
-          © 2026 Pepscore Labs. All rights reserved.
+          © 2026 Pepscore Lab. All rights reserved.
         </p>
         {/* ── IMPORTANT: RUO Disclaimer ────────────────────────────────────── */}
         <p style={{
@@ -68,7 +68,7 @@ export default function LandingFooter() {
         }}>
           Research Use Only (RUO) | Not for human consumption or diagnostic or therapeutic use.
           All products are intended for laboratory and research purposes only.
-          Pepscore Labs assumes no liability for misuse or off-label application.
+          Pepscore Lab assumes no liability for misuse or off-label application.
         </p>
       </div>
     </footer>
