@@ -2,6 +2,12 @@
 // ── LandingFooter.tsx ────────────────────────────────────────────────────────
 // Luxury footer with RUO disclaimer
 
+// The one production Pepscore app (auth, database, admin dashboard) lives on
+// Vercel, not here — this is a static marketing site with no backend of its
+// own. This link is pure navigation, never a second sign-in system: once the
+// main app has its own custom domain, only this one env var needs to change.
+const ADMIN_APP_URL = process.env.NEXT_PUBLIC_ADMIN_APP_URL ?? 'https://pepscore.vercel.app'
+
 export default function LandingFooter() {
   return (
     <footer style={{
@@ -39,6 +45,7 @@ export default function LandingFooter() {
           { label: 'Capabilities', href: '#capabilities' },
           { label: '202.425.3161', href: 'tel:2024253161' },
           { label: 'pepscorelab.com', href: 'https://pepscorelab.com' },
+          { label: 'Admin Sign In', href: `${ADMIN_APP_URL}/sign-in` },
         ].map(l => (
           <a
             key={l.label}
