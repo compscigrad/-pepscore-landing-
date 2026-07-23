@@ -6,7 +6,7 @@
 // Vercel, not here — this is a static marketing site with no backend of its
 // own. This link is pure navigation, never a second sign-in system: once the
 // main app has its own custom domain, only this one env var needs to change.
-const ADMIN_APP_URL = process.env.NEXT_PUBLIC_ADMIN_APP_URL ?? 'https://pepscore.vercel.app'
+const ADMIN_APP_URL = process.env.NEXT_PUBLIC_ADMIN_APP_URL ?? 'https://pepscore-compscigrads-projects.vercel.app'
 
 export default function LandingFooter() {
   return (
