@@ -21,20 +21,6 @@ export default function LandingPage() {
 
       <LandingHeader />
 
-      {/* Announcement Banner */}
-      <div style={{
-        background: 'linear-gradient(90deg, #8A6B1A 0%, #D4AF37 40%, #E8C84A 60%, #D4AF37 80%, #8A6B1A 100%)',
-        padding: '9px 24px',
-        textAlign: 'center',
-        fontSize: '11px',
-        fontWeight: 700,
-        letterSpacing: '0.14em',
-        color: '#000',
-        textTransform: 'uppercase',
-      }}>
-        ✦ &nbsp; Pepscore Lab — Launching Fall 2026 &nbsp;|&nbsp; Precision Peptide Solutions &nbsp; ✦
-      </div>
-
       <LandingHero />
       <LandingPortalAccess />
       <LandingPositioning />
