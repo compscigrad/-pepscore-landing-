@@ -45,7 +45,7 @@ export default function LandingFooter() {
           { label: 'Capabilities', href: '#capabilities' },
           { label: '202.425.3161', href: 'tel:2024253161' },
           { label: 'pepscorelab.com', href: 'https://pepscorelab.com' },
-          { label: 'Admin Sign In', href: `${ADMIN_APP_URL}/sign-in` },
+          { label: 'Admin Sign In', href: `${ADMIN_APP_URL}/sign-in?redirect_url=/admin` },
         ].map(l => (
           <a
             key={l.label}
