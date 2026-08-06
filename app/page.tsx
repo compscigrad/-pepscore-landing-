@@ -5,6 +5,7 @@
 // DOMAIN: pepscorelab.com
 // ============================================================
 
+import LandingHeader from '@/components/landing/LandingHeader'
 import LandingHero from '@/components/landing/LandingHero'
 import LandingPortalAccess from '@/components/landing/LandingPortalAccess'
 import LandingPositioning from '@/components/landing/LandingPositioning'
@@ -17,6 +18,8 @@ import LandingFooter from '@/components/landing/LandingFooter'
 export default function LandingPage() {
   return (
     <div style={{ fontFamily: "'Montserrat', 'Inter', sans-serif", background: '#000', color: '#fff', overflowX: 'hidden' }}>
+
+      <LandingHeader />
 
       {/* Announcement Banner */}
       <div style={{
