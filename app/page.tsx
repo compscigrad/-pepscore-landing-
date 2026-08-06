@@ -6,6 +6,7 @@
 // ============================================================
 
 import LandingHero from '@/components/landing/LandingHero'
+import LandingPortalAccess from '@/components/landing/LandingPortalAccess'
 import LandingPositioning from '@/components/landing/LandingPositioning'
 import LandingCapabilities from '@/components/landing/LandingCapabilities'
 import LandingCatalog from '@/components/landing/LandingCatalog'
@@ -32,6 +33,7 @@ export default function LandingPage() {
       </div>
 
       <LandingHero />
+      <LandingPortalAccess />
       <LandingPositioning />
       <LandingCapabilities />
       <LandingCatalog />
