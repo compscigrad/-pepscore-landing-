@@ -12,6 +12,14 @@
 // Plain link into the real app, same ADMIN_APP_URL/redirect_url pattern as
 // LandingPortalAccess.tsx and LandingFooter.tsx; no auth, portal, or
 // database logic lives here.
+//
+// redirect_url carries an explicit ?portal=customer intent marker through
+// to /account (not just the bare path) -- this is what lets /account tell
+// "explicit Customer Portal click-through" apart from "stale admin
+// bookmark" when the visitor is already signed in as the site admin, fixing
+// a production bug where clicking this button while signed in as admin
+// silently landed on /admin instead of the customer flow. See
+// lib/portal/accountRouting.ts in the main app repo.
 import { useState } from 'react'
 
 const ADMIN_APP_URL = process.env.NEXT_PUBLIC_ADMIN_APP_URL ?? 'https://pepscore-compscigrads-projects.vercel.app'
@@ -75,7 +83,7 @@ export default function LandingHeader() {
 
       <div className="ps-cta-row">
         <a
-          href={`${ADMIN_APP_URL}/sign-in?redirect_url=/account`}
+          href={`${ADMIN_APP_URL}/sign-in?redirect_url=${encodeURIComponent('/account?portal=customer')}`}
           className="ps-header-link-primary"
           style={hover ? { boxShadow: '0 4px 16px rgba(212,175,55,0.4)' } : undefined}
           onMouseEnter={() => setHover(true)}

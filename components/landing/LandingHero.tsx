@@ -126,21 +126,6 @@ export default function LandingHero() {
           backgroundSize: '64px 64px',
         }} />
 
-        {/* Launching badge — top right */}
-        <div style={{
-          position: 'absolute', top: '24px', right: '28px',
-          background: 'rgba(0,0,0,0.7)',
-          border: '1px solid rgba(212,175,55,0.5)',
-          backdropFilter: 'blur(12px)',
-          borderRadius: '50px',
-          padding: '7px 18px',
-          fontSize: '11px', fontWeight: 700,
-          letterSpacing: '0.14em', color: '#D4AF37',
-          textTransform: 'uppercase', zIndex: 20,
-        }}>
-          🔬 Launching Fall 2026
-        </div>
-
         {/* ── Content ───────────────────────────────────────────────────────── */}
         <div className="ps-hero-content">
           <div className="ps-hero-inner">
